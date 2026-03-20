@@ -142,7 +142,7 @@ Not a prompt template. A structured copy system with:
 
 ### Design Token Database (200+ Sites)
 
-Real design tokens extracted from production SaaS sites using [Dembrandt](https://github.com/nicholasgriffintn/dembrandt). Not guesses. Not AI-generated palettes. The actual colors, fonts, spacing, and border radii that Stripe, Linear, Vercel, Notion, Supabase, Resend, and 194 other successful products use.
+Real design tokens extracted from production SaaS sites using [Dembrandt](https://github.com/dembrandt/dembrandt). Not guesses. Not AI-generated palettes. The actual colors, fonts, spacing, and border radii that Stripe, Linear, Vercel, Notion, Supabase, Resend, and 194 other successful products use.
 
 Five vibe presets match tokens to your product:
 
@@ -301,7 +301,7 @@ Default output uses:
 |-----------|------|
 | [React](https://react.dev) | UI framework (or your framework of choice) |
 | [Tailwind CSS](https://tailwindcss.com) | Styling via design tokens |
-| [Framer Motion](https://www.framer.com/motion) | Animation and scroll effects |
+| [Framer Motion](https://motion.dev) | Animation and scroll effects |
 | [shadcn/ui](https://ui.shadcn.com) | Base component library |
 | [Magic UI](https://magicui.design) + [Aceternity UI](https://ui.aceternity.com) | Premium effects |
 | [Lucide React](https://lucide.dev) | Icons |
@@ -333,9 +333,9 @@ Default output uses:
 
 ## Credits
 
-[Dembrandt](https://github.com/nicholasgriffintn/dembrandt) for design token extraction from live sites.
+[Dembrandt](https://github.com/dembrandt/dembrandt) for design token extraction from live sites.
 [shadcn/ui](https://ui.shadcn.com), [Magic UI](https://magicui.design), [Aceternity UI](https://ui.aceternity.com) for component libraries.
-[Framer Motion](https://www.framer.com/motion) for animation. [Lucide](https://lucide.dev) for icons.
+[Framer Motion](https://motion.dev) for animation. [Lucide](https://lucide.dev) for icons.
 
 <br>
 
