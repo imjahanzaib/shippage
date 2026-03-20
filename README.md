@@ -1,6 +1,6 @@
 # Shippage
 
-**Ship a landing page from your terminal.**
+**A $50K landing page team in your terminal.**
 
 One sentence. Production-ready page. No AI slop. Free forever.
 
@@ -9,6 +9,9 @@ One sentence. Production-ready page. No AI slop. Free forever.
 ```
 
 That single prompt produces a complete, conversion-optimized landing page with professional copy, real design tokens, legal pages, cookie consent, SEO schemas, exit-intent popups, and analytics wiring. Not a template. Not a starting point. A production page ready to ship.
+
+Hiring a CRO strategist costs $10K/month. A SaaS copywriter charges $3K-5K per page.
+A designer charges $5K-15K. Shippage encodes all that expertise as data — free.
 
 Works with Next.js, Vite + React, Remix, Astro, Vue/Nuxt, and Svelte/SvelteKit.
 
@@ -24,11 +27,11 @@ The page looks like it was made by a robot because it was. Visitors bounce in 3 
 
 ## What This Skill Does Differently
 
-**It writes your copy.** Not placeholder text. Not "lorem ipsum." Not "Your compelling headline here." Real conversion copy using 629 lines of tested formulas, calibrated to your product's awareness level, CTA goal, and audience. Every headline is benefit-focused. Every CTA uses outcome language. An anti-AI word filter blocks 40+ overused words so your page sounds human.
+**It replaces your copywriter.** Not placeholder text. Not "lorem ipsum." Not "Your compelling headline here." Real conversion copy using 1,000+ lines of data-backed formulas. First-person CTAs that convert 90% better (A/B tested). Headlines calibrated to awareness levels. A social proof cascade that distributes proof throughout the page, not just one section. Risk reversal trust hints on every CTA (+32% conversion). An anti-AI word filter blocks 40+ overused words so your page sounds human. VoC (Voice of Customer) methodology that $5K copywriters use — encoded as rules.
 
-**It knows what good design looks like.** Shippage ships with real design tokens extracted from 200+ successful SaaS sites (Stripe, Linear, Vercel, Notion, and 196 more). When you say "dark premium," you don't get a guess. You get a curated palette based on what actually works in the wild.
+**It replaces your designer.** Shippage ships with real design tokens extracted from 200+ successful SaaS sites (Stripe, Linear, Vercel, Notion, and 196 more). Research-backed typography rules (66 chars/line optimal, 8px spacing grid, Major Third scale). Color psychology data (60-30-10 rule, contrast-first CTAs). Mobile-first layout patterns from analysis of 2,000+ B2B SaaS landing pages. When you say "dark premium," you don't get a guess. You get a curated system that professional agencies charge $5K-15K to create.
 
-**It understands conversion science.** Every page follows a 7-step narrative arc where each section has exactly one job: stop the scroll, build trust, agitate the pain, show the solution, prove it works, remove doubt, make the ask. This is the same sequence that A/B tested pages use. Sections are selected and ordered automatically based on your product.
+**It replaces your CRO strategist.** Every page follows a 7-step narrative arc where each section has exactly one job: stop the scroll, build trust, agitate the pain, show the solution, prove it works, remove doubt, make the ask. CRO agencies charge $10K/month for this sequence. Centered CTAs (+682% clicks). Above-fold CTAs (+304%). Single-offer pages (+266%). Social proof cascading at 5 strategic positions. Sections selected and ordered automatically based on your product, awareness level, and CTA type.
 
 **It handles the stuff nobody wants to build.** Cookie consent banners that comply with GDPR, CCPA, and CNIL standards. Exit-intent popups with A/B testing and frequency capping. Sticky CTA bars. Privacy policies, terms of service, cookie policies, and acceptable use policies generated from your intake data. JSON-LD structured data for Google rich results. OG image templates for social sharing. Sitemap and robots.txt. Analytics wiring with scroll depth tracking and CTA click events.
 
@@ -128,7 +131,7 @@ Every section is a complete, documented component with desktop layout, mobile la
 | **Sticky CTA Bar** | Keep the conversion action visible as the hero scrolls away |
 | **Cookie Consent** | GDPR/CCPA compliant banner with preference center and consent proof |
 
-### The Copy Engine (629 lines)
+### The Copy Engine (1,000+ lines)
 
 Not a prompt template. A structured copy system with:
 
@@ -227,21 +230,36 @@ Nothing is skipped. Nothing is optional. Every page goes through this sequence:
 
 <br>
 
+## The Data Moat
+
+Other tools give you pixels. Shippage gives you the brain behind the pixels.
+
+| Data Asset | What It Encodes | Size | Replaces |
+|---|---|---|---|
+| **Copy Engine** | VoC methodology, 40+ headline formulas, awareness-level calibration, first-person CTA rules (+90%), social proof cascade, risk reversal, anti-AI bans | 1,000+ lines | $3K-5K copywriter |
+| **Design Token DB** | Typography, color, spacing from 200 real SaaS sites. 8px grid, 60-30-10 color rule, Major Third type scale | 11,773 lines | $5K-15K designer |
+| **Conversion Sequence** | 7-step arc, section ordering by awareness, CTA placement data (+682% centered), single-offer focus (+266%) | Logic + data | $10K/mo CRO agency |
+| **Production Extras** | Legal pages, cookie CMP, exit-intent, JSON-LD, OG images, sitemap, analytics, scroll tracking | 18 templates | $600+/yr in SaaS |
+| **Pre-Launch Intel** | Zero-proof strategies, waitlist, founder story, traction signals, beta badges | Full workflow | No equivalent |
+
+<br>
+
 ## Compared to Alternatives
 
-| | Shippage | v0.dev | ShipFast | Framer |
-|---|---|---|---|---|
-| **Writes conversion copy** | Yes, 629-line system | No | No | No |
-| **Pre-launch mode** | Yes, zero-proof strategy | No | No | No |
-| **Design token database** | 200+ real SaaS sites | Same output every time | One template | Template gallery |
-| **Exit-intent + popups** | Built in, A/B tested | No | No | No |
-| **Legal pages** | GDPR/CCPA compliant generators | No | No | No |
-| **Cookie consent** | Full CMP with consent proof | No | No | No |
-| **SEO automation** | JSON-LD + OG image + sitemap | Basic meta only | Basic meta only | Limited |
-| **Frameworks** | 6 frameworks | Next.js only | Next.js only | N/A (proprietary) |
-| **Price** | **Free** | $20/mo | $199 one-time | $10 to $100/mo per site |
-| **You own the code** | Yes | Yes | Yes | No |
-| **Terminal native** | Yes | No (browser) | No (repo clone) | No (browser) |
+| | Shippage | v0.dev | ShipFast | Magic UI Pro | Framer |
+|---|---|---|---|---|---|
+| **Conversion copy** | 1,000+ lines, data-backed | No | No | Placeholder text | No |
+| **Social proof cascade** | 5-position system | No | No | No | No |
+| **Risk reversal on CTAs** | Auto per CTA type | No | No | No | No |
+| **Pre-launch mode** | Zero-proof strategy | No | No | No | No |
+| **Design tokens** | 200+ real SaaS sites | Same every time | 1 template | Tailwind defaults | Gallery |
+| **Exit-intent + popups** | Built in, A/B tested | No | No | No | No |
+| **Legal pages** | GDPR/CCPA generators | No | No | No | No |
+| **Cookie consent** | Full CMP | No | No | No | No |
+| **SEO** | JSON-LD + OG + sitemap | Basic meta | Basic meta | No | Limited |
+| **Frameworks** | 6 | Next.js only | Next.js only | React only | Proprietary |
+| **Price** | **Free** | $20/mo | $199 | $199 | $10-100/mo |
+| **Own the code** | Yes | Yes | Yes | Yes | No |
 
 <br>
 
@@ -249,9 +267,9 @@ Nothing is skipped. Nothing is optional. Every page goes through this sequence:
 
 v0 generates components. Shippage generates **pages that sell**.
 
-v0 has no copy system — it writes "leverage your potential" and calls it a headline. No design token database — same Inter + purple gradient every time. No effects budget — either zero animations or visual chaos. No exit-intent popups, no cookie consent, no legal pages, no analytics wiring. And it locks you into Next.js at $20/mo.
+v0 has no copy system — it writes "leverage your potential" and calls it a headline. No design token database — same Inter + purple gradient every time. No conversion strategy — just "a page with sections." No exit-intent popups, no cookie consent, no legal pages, no analytics wiring. And it locks you into Next.js at $20/mo.
 
-Shippage is free, runs in your terminal, supports 6 frameworks, writes real conversion copy using 629 lines of tested formulas, and handles all the production details (GDPR compliance, SEO schemas, A/B tested popups) that v0 leaves for you to figure out.
+Shippage is free, runs in your terminal, supports 6 frameworks, writes real conversion copy using 1,000+ lines of A/B-tested formulas, and handles all the production details (GDPR compliance, SEO schemas, A/B tested popups) that v0 leaves for you to figure out.
 
 <br>
 

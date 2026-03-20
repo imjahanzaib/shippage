@@ -15,10 +15,17 @@ description: |
 
 # Shippage
 
-Ship a landing page from your terminal. One sentence in, production-ready page out.
+A $50K landing page team in your terminal. One sentence in, production-ready page out.
+
+This skill encodes the expertise of a CRO strategist ($10K/mo), conversion copywriter
+($3K-5K/page), SaaS designer ($5K-15K/page), and full-stack developer — as data.
 No AI slop. No templates. No subscriptions.
 
-**Stack**: React + Tailwind CSS + Framer Motion + shadcn/ui (default).
+**Data moat**: 1,000+ lines of conversion copy rules from A/B tests · 200 real design
+token sets from top SaaS sites · 7-step conversion psychology sequence · Social proof
+cascade system · Risk reversal on every CTA · Pre-launch intelligence for zero-proof pages
+
+**Stack**: React + Tailwind CSS + Framer Motion + shadcn/ui + Magic UI (default).
 Adaptable to any framework — see `references/framework-adapters.md`.
 
 ---
@@ -299,15 +306,24 @@ If an effect fails to install: fall back to CSS-only alternative. The page must 
 ## Step 6: Assembly
 
 1. Read each section template from `references/sections/`
-2. Read shared rules from `references/section-defaults.md`
+2. Read shared rules from `references/section-defaults.md` — **especially the Visual Polish section**
 3. Apply design tokens in `globals.css` (`:root` + `.dark`)
 4. Insert generated copy into section templates
-5. Wire effects: hero background, optional text/CTA effects
-6. Add conversion tools: exit-intent popup (always), sticky CTA bar (always). Add `data-hero-cta` to hero CTA button and `data-cta-footer` to final CTA section.
-7. Add cookie consent banner (`references/sections/cookie-consent.md`). Add `data-cookie-settings` to footer "Cookie Settings" link.
-8. Generate legal pages (`references/legal-pages.md`): Privacy Policy, Terms of Service, Cookie Policy, Acceptable Use Policy. Fill templates with user's business details from intake.
-9. Add SEO assets: JSON-LD structured data (Organization + SoftwareApplication + FAQPage schemas), OG image (component or Next.js dynamic), sitemap.xml, robots.txt. See `references/framework-adapters.md` for templates per framework.
-10. See `references/framework-adapters.md` for framework-specific setup
+5. Wire effects: hero background (REQUIRED), text effect (recommended), CTA effect (recommended)
+6. **Apply visual polish (REQUIRED):**
+   - Grain texture overlay on `body` (see section-defaults.md §Visual Polish)
+   - Glow effects behind hero content and CTA buttons
+   - Gradient transitions between sections — never hard edges
+   - Frosted glass on cards for dark vibes
+   - Colored shadows using brand primary
+   - Scroll-linked parallax on hero section
+   - Animated number counters on social proof stats
+   - Mix 3-4 different entrance animation variants across sections (see §Scroll Animation map)
+7. Add conversion tools: exit-intent popup (always), sticky CTA bar (always). Add `data-hero-cta` to hero CTA button and `data-cta-footer` to final CTA section.
+8. Add cookie consent banner (`references/sections/cookie-consent.md`). Add `data-cookie-settings` to footer "Cookie Settings" link.
+9. Generate legal pages (`references/legal-pages.md`): Privacy Policy, Terms of Service, Cookie Policy, Acceptable Use Policy. Fill templates with user's business details from intake.
+10. Add SEO assets: JSON-LD structured data (Organization + SoftwareApplication + FAQPage schemas), OG image (component or Next.js dynamic), sitemap.xml, robots.txt. See `references/framework-adapters.md` for templates per framework.
+11. See `references/framework-adapters.md` for framework-specific setup
 
 ### Dark Mode
 - **Dark-first only**: dev tools, AI/ML, dark-premium vibe

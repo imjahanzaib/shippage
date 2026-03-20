@@ -1,0 +1,52 @@
+{
+  "name": "shippage",
+  "version": "0.1.1",
+  "description": "A $50K landing page team in your terminal. Conversion-optimized SaaS landing page sections built on shadcn/ui + Magic UI.",
+  "type": "module",
+  "bin": {
+    "shippage": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.1.0",
+    "commander": "^12.1.0",
+    "execa": "^9.5.0",
+    "fs-extra": "^11.0.0",
+    "picocolors": "^1.1.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.0",
+    "@types/node": "^22.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "landing-page",
+    "saas",
+    "shadcn",
+    "magic-ui",
+    "conversion",
+    "cli",
+    "tailwind",
+    "react",
+    "nextjs"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imjahanzaib/shippage.git"
+  },
+  "homepage": "https://shippage.dev"
+}

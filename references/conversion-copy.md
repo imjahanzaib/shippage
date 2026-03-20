@@ -78,7 +78,21 @@ Every SaaS landing page follows this exact sequence. Each section serves one job
 
 ## 2. Headline Formulas by Awareness Level
 
-Before writing a headline, determine the visitor's awareness level. The wrong headline for the awareness level kills conversion instantly.
+Before writing a headline, determine the visitor's awareness level. The wrong headline
+for the awareness level kills conversion instantly.
+
+### Data-Backed Headline Rules
+
+- **Length**: 6-10 words optimal. Users only absorb the first 3 and last 3 words (Nielsen).
+  Under 44 characters for hero H1. Under 8 words.
+- **Numbers in headlines**: Convert 30% better than non-number headlines (Highrise test).
+  Odd numbers outperform even by 20% (Outbrain, 150K headlines).
+- **"How to" headlines**: +20% CTR (HubSpot analysis).
+- **Negative framing**: Words like "stop", "never", "avoid" increase CTR by 2.3% per negative
+  word. Positive words decrease CTR by 1.0% per word (Outbrain).
+- **Specificity wins**: "Save 6 hours every week" beats "Save time." Always.
+- **The 5-second test**: A visitor must understand what you do, who it's for, and what to do
+  next within 5 seconds of seeing the hero (the StoryBrand "Grunt Test").
 
 ### Problem-Aware Visitors
 
@@ -131,23 +145,40 @@ Lead with what makes you different from the alternatives they already know.
 
 These rules are backed by A/B test data across SaaS landing pages. Do not deviate.
 
+### The First-Person Rule (Mandatory)
+
+**Use first-person pronouns in CTAs.** "Start my free trial" converts 90% better than
+"Start your free trial" (ContentVerve A/B test, 3 weeks, replicated by Copyhackers).
+Personalized CTAs convert 202% better than generic ones (HubSpot).
+
+- GOOD: "Start **my** free trial"
+- GOOD: "Get **my** free report"
+- GOOD: "Show **me** how it works"
+- BAD: "Start **your** free trial"
+- BAD: "Sign up"
+
 ### High-Performing CTA Text
 
-| CTA Text | Best For | Why It Works |
-|---|---|---|
-| "Start Free Trial" | Product-focused traffic, solution-aware visitors | Action-oriented, removes cost objection upfront |
-| "Trial for Free" | General traffic | Converts 104% better than "Sign up for free" (tested) |
-| "See How It Works" | Problem-aware traffic, complex products | Low commitment, curiosity-driven |
-| "Book a Demo" | Enterprise, high-ticket ($500+/mo), multi-stakeholder | Matches buying behavior for large purchases |
-| "Get [Specific Outcome]" | Lead magnets, gated content | Outcome-focused: "Get Your Free Audit Report" |
-| "Start [Doing Thing] Free" | Action-oriented audiences | "Start Deploying Free", "Start Tracking Free" |
+| CTA Text | Best For | Why It Works | Data |
+|---|---|---|---|
+| "Start my free trial" | Product-focused traffic, solution-aware visitors | First-person + removes cost objection | +90% CTR (ContentVerve) |
+| "Try it free" | General traffic | "Trial" implies temporary, low commitment | +104% vs "Sign up for free" |
+| "See how it works" | Problem-aware traffic, complex products | Low commitment, curiosity-driven | Top transitional CTA |
+| "Book a demo" | Enterprise, high-ticket ($500+/mo) | Matches B2B buying behavior | Standard for $10K+ ACV |
+| "Get my [outcome]" | Lead magnets, gated content | Outcome-focused + first-person | +202% personalized (HubSpot) |
+| "Start [doing thing] free" | Action-oriented audiences | Action verb + outcome | "Start deploying free" |
+| "Get premium access" | Freemium, upgrade flows | Exclusivity + value signal | +100% vs "Start free trial" |
 
 ### CTA Placement Rules
 
 - The primary CTA appears minimum **4 times** on every landing page: hero, after features, after testimonials, final CTA section.
-- CTA must be the **highest-contrast element** on every viewport. If a visitor screenshots any section, the CTA should be the first thing they notice.
+- CTA must be the **highest-contrast element** on every viewport. A visitor should spot the CTA before reading any text.
+- **Center CTAs.** Centered CTAs get 682% more clicks than left-aligned (Unbounce).
+- **Above the fold.** Above-fold CTAs perform 304% better than below-fold only.
 - Use one primary CTA style (filled, bold color) and one secondary CTA style (outlined or text link) maximum. Never three styles.
-- Mobile: CTA must be thumb-reachable. Sticky CTA bar on scroll for long pages.
+- A page with one CTA converts 266% better than a page with multiple different offers.
+- Mobile: CTA must be in the lower-center thumb zone. Sticky CTA bar on scroll for long pages.
+- Minimum touch target: 44x44px (Apple HIG) / 48x48dp (Material Design). 8-12px between targets.
 
 ### Banned CTA Text (Never Use These)
 
@@ -159,24 +190,30 @@ These rules are backed by A/B test data across SaaS landing pages. Do not deviat
 - "Download" -- unless it is literally a file download
 - "Join Now" -- vague, no outcome communicated
 
-### CTA Trust Hints
+### Risk Reversal System (Trust Hints)
 
-Always place a trust hint directly below or beside the CTA button:
+Risk reversal is the most underused conversion tactic. A money-back guarantee badge
+increases sales by 32% (Visual Website Optimizer). Forms with trust badges convert
+42% more. "Cancel anytime" paired with Netflix's CTA lifted conversions 124%.
 
-```
-[  Start Free Trial  ]
-No credit card required. Cancel anytime.
-```
+**Always place a risk reversal hint directly below every CTA button on the page.**
 
-```
-[  Book a Demo  ]
-30-minute call. No commitment. See it live.
-```
+Match the hint to the CTA type:
 
-```
-[  Get Your Free Report  ]
-Takes 2 minutes. No email spam.
-```
+| CTA Type | Risk Reversal Text |
+|---|---|
+| Free trial | "No credit card required. Cancel anytime." |
+| Demo | "30-minute call. No commitment. See it live." |
+| Purchase | "30-day money-back guarantee. Cancel in one click." |
+| Waitlist | "No spam. Unsubscribe anytime. We email once." |
+| Download | "Takes 2 minutes. No email spam." |
+| Open source | "Free forever. MIT Licensed. You own the code." |
+
+**Visual trust signals near CTAs:**
+- Security badges (SOC 2, GDPR, SSL) → +42% conversion on forms
+- Star ratings (aim for 4.0-4.7, higher seems fake) → +58% with Trustpilot badge
+- Customer count ("Join 10,847 teams") → social momentum
+- Payment logos (Stripe, PayPal) → perceived payment security
 
 ---
 
@@ -282,23 +319,71 @@ future-proof, bleeding-edge, disruptive, groundbreaking, unparalleled
    - BAD: "We built a powerful analytics engine"
    - GOOD: "You get answers in seconds, not hours"
 
-### Voice Calibration Step
+### Voice Calibration Step (The $5K Copywriter Technique)
+
+Professional SaaS copywriters charge $3K-$5K per landing page. The #1 thing that
+justifies that price is Voice of Customer (VoC) research — mining real customer
+language and mirroring it back. A VoC-mined headline beat an internally-written
+headline by 400%+ in the landmark Copyhackers rehab center test. This technique
+is the single highest-leverage action for conversion copy.
 
 Before writing any copy, the skill MUST ask the user:
 
-> "How do your customers describe the problem your product solves? Paste 2-3 sentences from a customer email, support ticket, sales call transcript, or review. I will mirror their exact language in the copy."
+> "How do your customers describe the problem your product solves? Paste 2-3 sentences from a customer email, support ticket, sales call transcript, G2 review, Reddit post, or Amazon review of a competing product. I will mirror their exact language in the copy."
 
 If the user cannot provide customer language, prompt them with:
 
 > "What's the most common complaint your customers had before using your product? How would they describe it to a coworker?"
 
-Use the exact phrasing, vocabulary level, and emotional tone from their response throughout the page copy. This is the single highest-leverage action for conversion copy.
+**VoC Message Mining Rules:**
+1. Extract exact phrases — do not paraphrase or "improve" customer language
+2. Focus on pain phrases: "tired of", "frustrated by", "waste time on", "can't believe"
+3. Pull outcome phrases: "finally", "now I can", "saved us", "no more"
+4. Mirror the vocabulary level — if customers say "deploy" not "facilitate deployment", use "deploy"
+5. Customer language goes directly into: headlines, subheadlines, pain point descriptions, CTA text
+6. The skill should also suggest where to find VoC data: G2 reviews, Reddit r/[industry], Capterra, support tickets, sales call recordings
+
+**If the user has zero customer data (pre-launch):**
+Use the product description to identify the problem category, then write copy using
+the most common pain language for that category. Default to concrete, specific
+language over abstract claims. Write at a 5th-7th grade reading level (Flesch-Kincaid
+score 60-80) — this converts at 12.9% vs 2.1% for professional-level text.
+
+### Readability Rules
+
+Copy that reads at a 5th-7th grade level converts 56% better than college-level text
+(11.1% vs 5.3% conversion rate). Enforce these rules:
+
+- **Flesch-Kincaid target**: Grade 5-7 (reading ease score 60-80)
+- **Sentence length**: 15-20 words maximum in hero. 25 words max elsewhere.
+- **Syllable count**: Prefer 1-2 syllable words. "Use" not "utilize." "Help" not "facilitate."
+- **Paragraph length**: 2-3 sentences maximum. One idea per paragraph.
+- **Jargon rule**: Only use technical terms the specific audience uses daily. If in doubt, simplify.
 
 ---
 
 ## 6. Social Proof Copy Rules
 
-Social proof is the most abused and most wasted section on SaaS landing pages. These rules ensure it actually builds trust.
+Social proof is the most abused and most wasted section on SaaS landing pages.
+Adding a single testimonial boosts conversion by 34%. Logos + testimonials combined = +84%.
+But placement matters more than existence. These rules ensure proof actually builds trust.
+
+### The Social Proof Cascade (Distribute, Don't Cluster)
+
+Do NOT put all social proof in one section. Distribute different types of proof
+throughout the page, placing each type near the claim it validates:
+
+| Position | Proof Type | What It Does | Data |
+|---|---|---|---|
+| After hero | Logo bar + aggregate metric ("Trusted by 10,847 teams") | Establishes legitimacy before any claims | Logos alone = +43% |
+| After each feature | Inline micro-testimonial ("We reduced deploy time by 73%") | Validates the specific feature claim | Claim-adjacent proof reduces skepticism |
+| Before pricing | Security badges + enterprise logos | Reduces risk at decision point | Trust badges = +42% |
+| After FAQ | Case study link + "Join X companies" counter | Provides depth for researchers | Rewards scroll depth |
+| Final CTA | Activity counter ("47 teams signed up today") + star rating | Creates momentum at conversion point | Star rating sweet spot: 4.0-4.7 |
+
+**Critical rule:** Social proof with a specific result ("Saved 12 hours/week") converts
+3x better than generic praise ("Great product, love it!"). Every proof element must
+include a number, timeframe, or specific outcome.
 
 ### The Specificity Rule
 

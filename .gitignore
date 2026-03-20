@@ -46,3 +46,9 @@ __pycache__/
 
 # Internal research (market intel, not for public repo)
 research/
+
+# Demo site (deployed separately at shippage.dev)
+demo/
+
+# QA reports
+.gstack/

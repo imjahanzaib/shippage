@@ -230,58 +230,97 @@ Install: `npx shadcn@latest add "https://magicui.design/r/bento-grid"`
 
 ## 4. Universal Motion (always included -- NOT counted in the 3-effect budget)
 
-### Scroll Reveal -- every section fades in + slides up on viewport entry
+### Entrance Animation Library — mix 3-4 per page for variety
+
+See `section-defaults.md → Scroll Animation` for the full library (fadeUp, blurIn, scaleUp,
+slideLeft, slideRight, clipReveal) and the section → animation mapping table.
+
+**Key rule**: Never use the same entrance animation on every section. Vary them.
+
+### Stagger Children — items reveal sequentially
 ```tsx
-<motion.div
-  initial={{ opacity: 0, y: 20 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, margin: "-100px" }}
-  transition={{ duration: 0.5, ease: "easeOut" }}
->{children}</motion.div>
+const stagger = (delay = 0.08) => ({
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { staggerChildren: delay, delayChildren: 0.1 } },
+});
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.25, 0.4, 0.25, 1] as const } },
+};
 ```
 
-### Stagger Children -- items reveal sequentially, 100ms delay per item
+### Hero Parallax — scroll-linked fade + translate
 ```tsx
-const staggerContainer = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.1 } } };
-const staggerItem = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } } };
+import { useScroll, useTransform, motion } from "framer-motion";
+const ref = useRef(null);
+const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
+const y = useTransform(scrollYProgress, [0, 1], [0, 200]);
+const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
-<motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true }}>
-  {items.map((item) => <motion.div key={item.id} variants={staggerItem}>{item.content}</motion.div>)}
-</motion.div>
+<section ref={ref}>
+  <motion.div style={{ y, opacity }}>{/* hero content */}</motion.div>
+</section>
 ```
 
-### Button Hover -- scale(1.02) + brightness shift, 150ms ease
+### Button Hover — scale + glow
 ```tsx
 <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
-  transition={{ duration: 0.15, ease: "easeInOut" }}
-  className="rounded-lg bg-primary px-6 py-3 text-white hover:brightness-110">
+  transition={{ duration: 0.15, ease: [0.25, 0.4, 0.25, 1] as const }}
+  className="rounded-lg bg-primary px-6 py-3 text-white
+    shadow-[0_0_20px_-3px_hsl(var(--primary)/0.4)]
+    hover:shadow-[0_0_30px_-3px_hsl(var(--primary)/0.6)]
+    hover:brightness-110 transition-all duration-300">
   Get Started
 </motion.button>
 ```
 
-### Card Hover -- translateY(-4px) + shadow increase, 200ms ease
+### Card Hover — lift + colored glow + border highlight
 ```tsx
-<motion.div whileHover={{ y: -4 }} transition={{ duration: 0.2, ease: "easeOut" }}
-  className="rounded-xl border bg-card p-6 shadow-sm hover:shadow-lg transition-shadow duration-200">
+<motion.div whileHover={{ y: -4 }} transition={{ duration: 0.2 }}
+  className="group rounded-xl border border-border bg-card p-6
+    shadow-sm hover:shadow-[0_0_30px_-5px_hsl(var(--primary)/0.15)]
+    hover:border-primary/30 transition-all duration-300">
   {/* card content */}
 </motion.div>
 ```
 
-### Link Hover -- underline slide-in, 150ms ease
+### Link Hover — underline slide-in, 150ms
 ```css
 .link-hover { position: relative; transition: color 150ms ease; }
-.link-hover::after { content: ""; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: currentColor; transition: width 150ms ease; }
+.link-hover::after { content: ""; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px;
+  background: currentColor; transition: width 150ms ease; }
 .link-hover:hover::after { width: 100%; }
 ```
 
-### Logo Strip Hover -- grayscale to full color
+### Logo Strip Hover — grayscale to full color
 ```tsx
-<img src={logo.src} alt={logo.name} className="h-8 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
+<img className="h-8 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
 ```
 
-### Focus Rings -- 2px solid primary ring on keyboard focus
+### Focus Rings
 ```css
 *:focus-visible { outline: 2px solid hsl(var(--primary)); outline-offset: 2px; border-radius: 4px; }
+```
+
+### Animated Number Counter — scroll-triggered
+```tsx
+function Counter({ target, suffix = "" }: { target: number; suffix?: string }) {
+  const [count, setCount] = useState(0);
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
+  useEffect(() => {
+    if (!inView) return;
+    let current = 0;
+    const step = target / 40;
+    const id = setInterval(() => {
+      current += step;
+      if (current >= target) { setCount(target); clearInterval(id); }
+      else setCount(Math.floor(current));
+    }, 37);
+    return () => clearInterval(id);
+  }, [inView, target]);
+  return <span ref={ref}>{count}{suffix}</span>;
+}
 ```
 
 ---
