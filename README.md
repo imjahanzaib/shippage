@@ -1,8 +1,8 @@
 # Shippage
 
-**The landing page skill that writes your sales copy.**
+**Ship a landing page from your terminal.**
 
-One sentence in your terminal. A deployed page that actually sells. Free forever.
+One sentence. Production-ready page. No AI slop. Free forever.
 
 ```
 "Build a landing page for Deploybot — one-click deploys for small engineering teams"
@@ -56,7 +56,7 @@ The skill activates automatically whenever you ask Claude Code to build a landin
 
 ## Usage
 
-### Quick Mode (one sentence, full page)
+### Quick Mode (one sentence, deployed page)
 
 Give it a product name and a one-liner. Shippage infers everything else: design system, awareness level, CTA type, vibe, section selection, copy, effects, and mobile optimization.
 
@@ -74,7 +74,7 @@ Ship a landing page for GitGuard — automated security scanning for GitHub repo
 
 ### Guided Mode (full control)
 
-Want more control? The engine walks you through 8 intake questions: product name, one-liner, target audience, awareness level, CTA goal, social proof assets, vibe preference, and brand assets (colors, fonts, logos).
+Want more control? Shippage walks you through 8 intake questions: product name, one-liner, target audience, awareness level, CTA goal, social proof assets, vibe preference, and brand assets (colors, fonts, logos).
 
 ```
 Build a landing page for my SaaS (guided mode)
@@ -154,7 +154,7 @@ Five vibe presets match tokens to your product:
 | **Playful Creative** | Colorful, warm, rounded | Consumer apps, Design tools, Education |
 | **Enterprise Trust** | Navy/gray, conservative, serious | Security, Compliance, Healthcare |
 
-Or skip presets entirely: say **"make it look like linear.app"** and the engine extracts tokens from the live site.
+Or skip presets entirely: say **"make it look like linear.app"** and Shippage extracts tokens from the live site.
 
 ### Effects Budget System
 
@@ -241,6 +241,28 @@ Nothing is skipped. Nothing is optional. Every page goes through this sequence:
 | **Price** | **Free** | $20/mo | $199 one-time | $10 to $100/mo per site |
 | **You own the code** | Yes | Yes | Yes | No |
 | **Terminal native** | Yes | No (browser) | No (repo clone) | No (browser) |
+
+<br>
+
+## Why Not Just Use v0?
+
+v0 generates components. Shippage generates **pages that sell**.
+
+v0 has no copy system — it writes "leverage your potential" and calls it a headline. No design token database — same Inter + purple gradient every time. No effects budget — either zero animations or visual chaos. No exit-intent popups, no cookie consent, no legal pages, no analytics wiring. And it locks you into Next.js at $20/mo.
+
+Shippage is free, runs in your terminal, supports 6 frameworks, writes real conversion copy using 629 lines of tested formulas, and handles all the production details (GDPR compliance, SEO schemas, A/B tested popups) that v0 leaves for you to figure out.
+
+<br>
+
+## Built for Indie Hackers
+
+Launching a SaaS? This skill handles the problems you're avoiding:
+
+- **No copywriting skills?** 629 lines of conversion-tested copy rules write your headlines, subheadlines, CTAs, and feature descriptions using outcome language, not AI slop
+- **No design eye?** Real design tokens extracted from 200+ successful SaaS sites (Stripe, Linear, Vercel, Notion, and 196 more)
+- **No screenshots yet?** Pre-launch mode generates gradient placeholders, architecture diagrams, and founder story sections instead
+- **No social proof?** Waitlist counters, GitHub stars, beta badges, and founder credibility sections replace logo bars and testimonials
+- **No budget?** Free. No credits. No subscription. Code you own.
 
 <br>
 

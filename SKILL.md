@@ -15,8 +15,8 @@ description: |
 
 # Shippage
 
-Generates complete, production-ready SaaS landing pages that convert. The output is
-a deployable sales machine — not just a pretty page.
+Ship a landing page from your terminal. One sentence in, production-ready page out.
+No AI slop. No templates. No subscriptions.
 
 **Stack**: React + Tailwind CSS + Framer Motion + shadcn/ui (default).
 Adaptable to any framework — see `references/framework-adapters.md`.
