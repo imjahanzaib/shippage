@@ -1,6 +1,6 @@
 # Section Defaults
 
-> Shared rules for all 17 section templates. Each template inherits everything below
+> Shared rules for all 18 section templates. Each template inherits everything below
 > unless it explicitly overrides a rule. Templates only document what is **unique**.
 
 ---

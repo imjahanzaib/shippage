@@ -103,7 +103,7 @@ Audit my landing page for conversion issues
 
 ## What's Inside
 
-### 17 Section Templates
+### 18 Section Templates
 
 Every section is a complete, documented component with desktop layout, mobile layout, copy rules, accessibility requirements, animation specs, and production-ready JSX.
 
@@ -122,6 +122,7 @@ Every section is a complete, documented component with desktop layout, mobile la
 | **Pricing** | Remove the biggest remaining objection: cost |
 | **FAQ** | Kill the final doubts before the ask |
 | **CTA Footer** | Make the ask. One last time. Clear and direct. |
+| **Contact Form** | Capture leads with spam-protected forms (Formspree, Resend, or custom) |
 | **Waitlist** | Viral waitlist with referral links, queue positions, and tiered rewards |
 | **Exit-Intent Popup** | Recover abandoning visitors with A/B tested offers |
 | **Sticky CTA Bar** | Keep the conversion action visible as the hero scrolls away |
@@ -296,6 +297,7 @@ shippage/
 │       ├── pricing.md                # Pricing tiers
 │       ├── faq.md                    # FAQ with objection handling
 │       ├── cta-footer.md             # Final conversion CTA
+│       ├── contact-form.md           # Lead capture with spam protection
 │       ├── waitlist.md               # Viral waitlist component
 │       ├── exit-intent-popup.md      # Exit-intent popup with A/B testing
 │       ├── sticky-cta-bar.md         # Sticky CTA bar

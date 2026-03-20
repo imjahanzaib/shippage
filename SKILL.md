@@ -7,7 +7,7 @@ description: |
   say "make a page for my product", "I need a website", "create a sales page",
   "ship a landing page", or "help me launch". Use for audits too: "roast my page",
   "audit this landing page", "review my website". Outputs deployable React projects
-  with Tailwind CSS, Framer Motion, shadcn/ui, 200 real design tokens, and 17
+  with Tailwind CSS, Framer Motion, shadcn/ui, 200 real design tokens, and 18
   conversion-optimized section templates. Supports Next.js, Vite, Remix, Astro,
   Vue, Svelte. Use this skill even if the user doesn't explicitly say "landing page"
   — if they're building software and need a website that sells, this is the skill.
@@ -170,6 +170,7 @@ Tokens become CSS custom properties in `globals.css` → referenced via Tailwind
 | `waitlist` | When CTA is waitlist — replaces hero + cta-footer with viral waitlist system |
 | `exit-intent-popup` | Always recommended — recovers 2-5% of abandoning visitors. Auto-includes for lead-gen CTAs (free trial, waitlist, demo, newsletter) |
 | `sticky-cta-bar` | Always recommended — keeps CTA accessible after hero scrolls out of view. 8-15% conversion improvement |
+| `contact-form` | When lead capture or direct inquiries are needed — most landing pages benefit from this |
 | `cookie-consent` | Always recommended — GDPR/CCPA-compliant cookie consent banner with preference panel, script blocking, regional auto-detection |
 
 ### Programmatic Selection
@@ -353,7 +354,7 @@ Format each fix as: BEFORE → AFTER → WHY.
 | **Shared defaults** | `references/section-defaults.md` |
 | **Framework setup** | `references/framework-adapters.md` |
 | **Design tokens** | `references/design-tokens-db.json` (200 sites, 8 industries) |
-| **Section templates** | `references/sections/` — navbar, hero-centered, hero-split, social-proof-logos, pain-points, features-bento, features-alternating, how-it-works, testimonials, comparison-table, pricing, faq, cta-footer, waitlist, exit-intent-popup, sticky-cta-bar, cookie-consent |
+| **Section templates** | `references/sections/` — navbar, hero-centered, hero-split, social-proof-logos, pain-points, features-bento, features-alternating, how-it-works, testimonials, comparison-table, pricing, faq, cta-footer, contact-form, waitlist, exit-intent-popup, sticky-cta-bar, cookie-consent |
 | **Legal pages** | `references/legal-pages.md` (Privacy Policy, Terms of Service, Cookie Policy, Acceptable Use Policy — replaces Termly/Iubenda/GetTerms at $3-35/mo) |
 | **Waitlist system** | `references/sections/waitlist.md` (frontend) + `references/waitlist-api.md` (serverless API, email templates, storage adapters) |
 | **Conversion tools** | `references/sections/exit-intent-popup.md` (exit-intent detection, A/B testing, frequency capping, mobile teaser) + `references/sections/sticky-cta-bar.md` (scroll-aware bar, 4 variants, countdown timer) |
